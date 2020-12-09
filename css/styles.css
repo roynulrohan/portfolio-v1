@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    background-image: url('../images/overlay.png'),
+        -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+    background-image: url('../images/overlay.png'),
+        -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+    background-image: url('../images/overlay.png'),
+        -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+    background-image: url('../images/overlay.png'),
+        linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.hero h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+.hero h2 {
+    font-size: 30px;
+}
+
+.profile-links div {
+    padding: 15px;
+    max-width: 70px;
+}
+
+.profile-links svg:hover {
+    cursor: pointer;
+    color: #e37682;
+}
+
+.dot {
+    margin-right: 5px;
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 1000px) {
+    .profile-links div {
+        padding: 10px;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+    }
+    .hero h2 {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .profile-links {
+        width: 1000px;
+    }
+
+    .profile-links div {
+        padding: 5px;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+    .hero h2 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .hero h1 {
+        font-size: 10vw;
+    }
+    .hero h2 {
+        font-size: 5vw;
+    }
+}
