@@ -21,6 +21,22 @@ body {
         -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
     background-image: url('../images/overlay.png'),
         linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+textarea {
+    min-height: 100px;
+    height: 200px;
+    max-height: 200px;
+}
+
+nav li {
+    transition: transform 200ms;
+}
+
+nav li:hover {
+    transform: scale(1.08);
 }
 
 .nav-link:hover {
@@ -54,8 +70,16 @@ body {
     color: #e37682;
 }
 
-.content {
+.content section {
+    text-align: center;
     height: 60vh;
+}
+
+.content-panel {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
 }
 
 .card {
