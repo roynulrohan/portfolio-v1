@@ -27,16 +27,17 @@ textarea {
     max-height: 200px;
 }
 
-nav li {
+nav a {
     transition: transform 200ms;
 }
 
-nav li:hover {
+nav a:hover {
+    color: #01ffd5 !important;
     transform: scale(1.08);
 }
 
-.nav-link:hover {
-    color: #e37682 !important;
+.navbar-brand {
+    padding-left: 0.5rem;
 }
 
 .hero {
@@ -96,6 +97,18 @@ nav li:hover {
 
 .skills p {
     margin: 0 !important;
+}
+
+.card-yellow {
+    border: #ffde24 !important;
+    background-image: url('../images/overlay.png'),
+        linear-gradient(45deg, #ffde24 90%, #202020 10%) !important;
+}
+
+.card-cyan {
+    border: #ffde24 !important;
+    background-image: url('../images/overlay.png'),
+        linear-gradient(45deg, #2ab0ee 90%, #202020 10%) !important;
 }
 
 .dot {

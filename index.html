@@ -23,7 +23,25 @@
     <body>
         <nav class="navbar p-3 navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Logo</a>
+                <a class="navbar-brand" href="#"
+                    ><svg
+                        width="1.5em"
+                        height="1.5em"
+                        viewBox="0 0 16 16"
+                        class="bi bi-house-fill"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
+                        />
+                        <path
+                            fill-rule="evenodd"
+                            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
+                        />
+                    </svg>
+                </a>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -192,7 +210,9 @@
 
             <section id="about" class="p-3 mb-3">
                 <div class="content-panel">
-                    <h2><b>About Me</b></h2>
+                    <h2>
+                        <b>About Me</b>
+                    </h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Proin purus augue, suscipit eu arcu eget, maximus
@@ -204,19 +224,25 @@
                     <div class="d-flex flex-column">
                         <div class="d-flex justify-content-around skills mt-3">
                             <div class="d-flex flex-column align-items-center">
-                                <h5 class="mb-3"><u>Front-End</u></h5>
+                                <h5 class="mb-3">
+                                    <u>Front-End</u>
+                                </h5>
                                 <p>HTML, CSS, JavaScript</p>
                                 <p>SASS, Bootstrap</p>
                                 <p>React, Redux</p>
                             </div>
                             <div class="d-flex flex-column align-items-center">
-                                <h5 class="mb-3"><u>Back-End</u></h5>
+                                <h5 class="mb-3">
+                                    <u>Back-End</u>
+                                </h5>
                                 <p>JavaScript, Python</p>
                                 <p>Node, Express</p>
                                 <p>MongoDB, REST APIs</p>
                             </div>
                             <div class="d-flex flex-column align-items-center">
-                                <h5 class="mb-3"><u>Other</u></h5>
+                                <h5 class="mb-3">
+                                    <u>Other</u>
+                                </h5>
                                 <p>Flutter, Android Studio</p>
                                 <p>Adobe Photoshop</p>
                                 <p>Git</p>
@@ -228,7 +254,9 @@
 
             <section id="projects" class="p-3">
                 <div class="content-panel">
-                    <h2><b>Projects</b></h2>
+                    <h2>
+                        <b>Projects</b>
+                    </h2>
                     <small class="text-danger">
                         Note: If demos don't load instantly, please give it a
                         minute as Heroku loads app after an idle state.
@@ -236,7 +264,7 @@
 
                     <div class="d-flex justify-content-center p-3">
                         <div
-                            class="card bg-warning"
+                            class="card card-yellow"
                             style="width: 20rem; height: 15rem"
                         >
                             <div
@@ -248,54 +276,53 @@
 
                             <div class="card-footer">
                                 <div
-                                    class="d-flex justify-content-around align-items-center"
+                                    class="p-2 d-flex justify-content-around align-items-center"
                                 >
                                     <a
                                         href="https://github.com/roynulrohan/not-IMDb"
                                         target="_blank"
-                                        class="text-dark"
+                                        class="text-dark d-flex align-items-center"
                                         ><svg
-                                            width="2em"
-                                            height="2em"
+                                            width="1.5em"
+                                            height="1.5em"
                                             viewBox="0 0 16 16"
-                                            class="bi bi-code-slash"
+                                            class="bi bi-file-earmark-code-fill"
                                             fill="currentColor"
                                             xmlns="http://www.w3.org/2000/svg"
                                         >
                                             <path
                                                 fill-rule="evenodd"
-                                                d="M4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0zm-.999-3.124a.5.5 0 0 1 .33.625l-4 13a.5.5 0 0 1-.955-.294l4-13a.5.5 0 0 1 .625-.33z"
-                                            />
-                                        </svg> </a
-                                    ><a
-                                        href="https://not-imdb.herokuapp.com"
-                                        target="_blank"
-                                        class="text-dark"
-                                    >
-                                        <svg
-                                            width="1.6em"
-                                            height="1.6em"
-                                            viewBox="0 0 16 16"
-                                            class="bi bi-box-arrow-up-right"
-                                            fill="currentColor"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                fill-rule="evenodd"
-                                                d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
-                                            />
-                                            <path
-                                                fill-rule="evenodd"
-                                                d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
+                                                d="M2 2a2 2 0 0 1 2-2h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm7.5 1.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0a.5.5 0 1 0-.708.708L10.293 10l-1.647 1.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z"
                                             />
                                         </svg>
+                                        <span class="ml-2">Code</span>
+                                    </a>
+                                    <a
+                                        href="https://not-imdb.herokuapp.com"
+                                        target="_blank"
+                                        class="text-dark d-flex align-items-center"
+                                    >
+                                        <svg
+                                            width="1.5em"
+                                            height="1.5em"
+                                            viewBox="0 0 16 16"
+                                            class="bi bi-cloud-check-fill"
+                                            fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 4.854a.5.5 0 0 0-.708-.708L7 8.793 5.854 7.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"
+                                            />
+                                        </svg>
+                                        <span class="ml-2">Live</span>
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div style="width: 5rem"></div>
                         <div
-                            class="card bg-dark text-white"
+                            class="card card-cyan"
                             style="width: 20rem; height: 15rem"
                         >
                             <div
@@ -307,47 +334,45 @@
 
                             <div class="card-footer">
                                 <div
-                                    class="d-flex justify-content-around align-items-center"
+                                    class="p-2 d-flex justify-content-around align-items-center"
                                 >
                                     <a
                                         href="https://github.com/roynulrohan/simple-habits"
                                         target="_blank"
-                                        class="text-white"
+                                        class="text-dark d-flex align-items-center"
                                         ><svg
-                                            width="2em"
-                                            height="2em"
+                                            width="1.5em"
+                                            height="1.5em"
                                             viewBox="0 0 16 16"
-                                            class="bi bi-code-slash"
+                                            class="bi bi-file-earmark-code-fill"
                                             fill="currentColor"
                                             xmlns="http://www.w3.org/2000/svg"
                                         >
                                             <path
                                                 fill-rule="evenodd"
-                                                d="M4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0zm-.999-3.124a.5.5 0 0 1 .33.625l-4 13a.5.5 0 0 1-.955-.294l4-13a.5.5 0 0 1 .625-.33z"
+                                                d="M2 2a2 2 0 0 1 2-2h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm7.5 1.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0a.5.5 0 1 0-.708.708L10.293 10l-1.647 1.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z"
                                             />
-                                        </svg> </a
+                                        </svg>
+                                        <span class="ml-2">Code</span></a
                                     ><a
                                         href="https://play.google.com/store/apps/details?id=com.roynulrohan.simple_habits"
                                         target="_blank"
-                                        class="text-white"
+                                        class="text-dark d-flex align-items-center"
                                     >
                                         <svg
-                                            width="1.6em"
-                                            height="1.6em"
+                                            width="1.5em"
+                                            height="1.5em"
                                             viewBox="0 0 16 16"
-                                            class="bi bi-box-arrow-up-right"
+                                            class="bi bi-cloud-check-fill"
                                             fill="currentColor"
                                             xmlns="http://www.w3.org/2000/svg"
                                         >
                                             <path
                                                 fill-rule="evenodd"
-                                                d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
-                                            />
-                                            <path
-                                                fill-rule="evenodd"
-                                                d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
+                                                d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 4.854a.5.5 0 0 0-.708-.708L7 8.793 5.854 7.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"
                                             />
                                         </svg>
+                                        <span class="ml-2">Live</span>
                                     </a>
                                 </div>
                             </div>
@@ -358,7 +383,9 @@
 
             <section id="contact" class="p-3">
                 <div class="content-panel">
-                    <h2><b>Contact</b></h2>
+                    <h2>
+                        <b>Contact</b>
+                    </h2>
                     <form
                         action="https://formspree.io/f/xknpqrew"
                         method="POST"
