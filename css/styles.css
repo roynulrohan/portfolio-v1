@@ -12,16 +12,12 @@ html {
 }
 
 body {
-    background-color: #ffffff;
-    background-image: url('../images/overlay.png'),
-        -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-    background-image: url('../images/overlay.png'),
-        -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-    background-image: url('../images/overlay.png'),
-        -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-    background-image: url('../images/overlay.png'),
-        linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-    background-repeat: no-repeat;
+    background: linear-gradient(45deg, #e37682, #5f4d93, #f97e8c, #5f4d93);
+    background-size: 800% 800%;
+    -webkit-animation: bgGradient 59s ease infinite;
+    -moz-animation: bgGradient 59s ease infinite;
+    -o-animation: bgGradient 59s ease infinite;
+    animation: bgGradient 59s ease infinite;
     background-attachment: fixed;
 }
 
@@ -68,13 +64,13 @@ nav li:hover {
 }
 
 .profile-links div {
+    transition: transform 200ms;
     padding: 15px;
     max-width: 70px;
 }
 
-.profile-links svg:hover {
-    cursor: pointer;
-    color: #e37682;
+.profile-links div:hover {
+    transform: scale(1.15);
 }
 
 .content section {
@@ -111,8 +107,54 @@ nav li:hover {
     display: inline-block;
 }
 
+@-webkit-keyframes bgGradient {
+    0% {
+        background-position: 0% 96%;
+    }
+    50% {
+        background-position: 100% 5%;
+    }
+    100% {
+        background-position: 0% 96%;
+    }
+}
+@-moz-keyframes bgGradient {
+    0% {
+        background-position: 0% 96%;
+    }
+    50% {
+        background-position: 100% 5%;
+    }
+    100% {
+        background-position: 0% 96%;
+    }
+}
+@-o-keyframes bgGradient {
+    0% {
+        background-position: 0% 96%;
+    }
+    50% {
+        background-position: 100% 5%;
+    }
+    100% {
+        background-position: 0% 96%;
+    }
+}
+@keyframes bgGradient {
+    0% {
+        background-position: 0% 96%;
+    }
+    50% {
+        background-position: 100% 5%;
+    }
+    100% {
+        background-position: 0% 96%;
+    }
+}
+
 @keyframes rubberBand {
     from {
+        color: #ff4a62;
         transform: scale3d(1, 1, 1);
     }
 
