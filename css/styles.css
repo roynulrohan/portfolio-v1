@@ -54,9 +54,9 @@ nav li:hover {
 }
 
 .hero span.animated {
-    -moz-animation: rubberBand 1s;
-    -webkit-animation: rubberBand 1s;
-    animation: rubberBand 1s;
+    -moz-animation: rubberBand 1.2s;
+    -webkit-animation: rubberBand 1.2s;
+    animation: rubberBand 1.2s;
 }
 
 .profile-links {
@@ -154,7 +154,6 @@ nav li:hover {
 
 @keyframes rubberBand {
     from {
-        color: #ff4a62;
         transform: scale3d(1, 1, 1);
     }
 

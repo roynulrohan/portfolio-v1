@@ -6,6 +6,6 @@ $('.animate').bind(
 );
 
 $('.animate').hover(function () {
-    console.log('here');
     $(this).addClass('animated');
 });
+
