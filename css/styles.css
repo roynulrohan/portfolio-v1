@@ -28,8 +28,12 @@ textarea {
 }
 
 nav {
-    position: absolute !important;
-    width: 100%;
+    transition: 0.5s;
+}
+
+nav.hidden {
+    transform: translateY(-30%) !important;
+    opacity: 0;
 }
 
 nav ul {
@@ -93,6 +97,16 @@ nav a:hover {
     height: 100%;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.about-me {
+    width: 50% !important;
+}
+
+.skills svg {
+    margin-right: 5px;
+    max-height: 3vh;
+    max-width: 3vh;
 }
 
 .projects-container {
@@ -213,6 +227,21 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 1000px) {
+    .about h5 {
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+    .about-me {
+        margin-top: 10px;
+        width: 75% !important;
+        font-size: 16px !important;
+    }
+
+    .skills-header {
+        margin-top: 30px;
+    }
+
     .projects-container {
         flex-direction: column;
         justify-content: space-evenly;
@@ -244,6 +273,12 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 760px) {
+    .about-me {
+        margin-top: 10px;
+        width: 100% !important;
+        font-size: 16px !important;
+    }
+
     .content h2 {
         font-size: 25px;
     }
