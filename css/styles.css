@@ -27,6 +27,15 @@ textarea {
     max-height: 200px;
 }
 
+nav {
+    position: absolute !important;
+    width: 100%;
+}
+
+nav ul {
+    width: 25rem;
+}
+
 nav a {
     transition: transform 200ms;
 }
@@ -40,9 +49,8 @@ nav a:hover {
     padding-left: 0.5rem;
 }
 
-.hero {
-    margin-top: 150px;
-    margin-bottom: 150px;
+#hero {
+    height: 100vh;
 }
 
 .hero h1 {
@@ -83,7 +91,16 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     height: 100%;
+    align-items: center;
     justify-content: space-evenly;
+}
+
+.projects-container {
+    display: flex;
+}
+
+.contact-form {
+    width: 50%;
 }
 
 .card {
@@ -196,6 +213,24 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 1000px) {
+    .projects-container {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .content section {
+        height: 100%;
+    }
+
+    #projects small {
+        margin: 20px;
+        width: 75% !important;
+    }
+
+    .contact-form {
+        width: 75%;
+    }
+
     .profile-links div {
         padding: 10px;
     }
@@ -209,6 +244,10 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 760px) {
+    .content h2 {
+        font-size: 25px;
+    }
+
     .profile-links {
         height: 60px;
         width: 50% !important;
@@ -227,6 +266,18 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 420px) {
+    .contact-form {
+        margin-top: 20px;
+    }
+
+    .content p {
+        font-size: 13px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
     .profile-links {
         width: 75% !important;
     }
