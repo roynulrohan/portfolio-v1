@@ -40,17 +40,71 @@ nav ul {
     width: 25rem;
 }
 
+nav li {
+    padding: 15px;
+}
+
 nav a {
-    transition: transform 200ms;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.nav-item a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #01ffd5;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav-item a:hover:after {
+    width: 100%;
+    left: 0;
 }
 
 nav a:hover {
     color: #01ffd5 !important;
-    transform: scale(1.08);
 }
 
 .navbar-brand {
-    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.section-buttons-container {
+    position: sticky;
+    top: 90%;
+}
+
+.section-buttons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    transform: translateY(-90%);
+    margin-right: 5vw;
+    transition: .5s;
+}
+
+.section-buttons a {
+    transition: 0.5s;
+}
+
+.section-buttons svg:hover {
+    color: #01ffd5;
+}
+
+.section-buttons a.hidden {
+    opacity: 0;
 }
 
 #hero {
@@ -87,7 +141,6 @@ nav a:hover {
 }
 
 .content section {
-    text-align: center;
     height: 60vh;
 }
 
@@ -97,10 +150,11 @@ nav a:hover {
     height: 100%;
     align-items: center;
     justify-content: space-evenly;
+    text-align: center;
 }
 
 .about-me {
-    width: 50% !important;
+    width: 65% !important;
 }
 
 .skills svg {
@@ -223,6 +277,12 @@ nav a:hover {
 
     to {
         transform: scale3d(1, 1, 1);
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .section-buttons {
+        opacity: 0;
     }
 }
 
