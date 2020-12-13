@@ -1,3 +1,5 @@
+let currentSection = '';
+
 $('.animate').bind(
     'webkitAnimationEnd mozAnimationEnd animationend',
     function () {
@@ -21,36 +23,50 @@ $(document).ready(function () {
     });
 });
 
-sections = $('section');
-s = 0;
+$(document).bind('scroll', function (e) {
+    $('section').each(function () {
+        if (
+            $(this).offset().top < window.pageYOffset + 400 &&
+            //begins before top
+            $(this).offset().top + $(this).height() > window.pageYOffset + 400
+            //but ends in visible area
+        ) {
+            console.log(currentSection);
+            if ($(this).attr('id') != 'hero') {
+                currentSection = '#' + $(this).attr('id');
+            } else {
+                currentSection = '';
+            }
+        }
+    });
+});
+
+$('.nav-link').click(function () {
+    currentSection = $(this).attr('href');
+});
 
 $('.next').click(function () {
-    if (s < sections.length - 1) {
-        s++;
-        $('html, body').animate(
-            {
-                scrollTop: sections.eq(s).offset().top,
-            },
-            50
-        );
+    if (currentSection == '') {
+        window.location.hash = 'about';
+        currentSection = '#about';
+    } else if (currentSection == '#about') {
+        window.location.hash = '#projects';
+        currentSection = '#projects';
+    } else if (currentSection == '#projects') {
+        window.location.hash = 'contact';
+        currentSection = '#contact';
     }
 });
 
 $('.previous').click(function () {
-    if (s > 0) {
-        s--;
-        $('html, body').animate(
-            {
-                scrollTop: sections.eq(s).offset().top,
-            },
-            50
-        );
-    } else {
-        $('html, body').animate(
-            {
-                scrollTop: 0,
-            },
-            50
-        );
+    if (currentSection == '#contact') {
+        window.location.hash = '#projects';
+        currentSection = '#projects';
+    } else if (currentSection == '#projects') {
+        window.location.hash = '#about';
+        currentSection = '#about';
+    } else if (currentSection == '#about') {
+        window.location.hash = '';
+        currentSection = '';
     }
 });
