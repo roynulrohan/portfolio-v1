@@ -68,5 +68,12 @@ $('.previous').click(function () {
     } else if (currentSection == '#about') {
         window.location.hash = '';
         currentSection = '';
+    } else if (currentSection == '') {
+        $('html, body').animate(
+            {
+                scrollTop: 0,
+            },
+            50
+        );
     }
 });
