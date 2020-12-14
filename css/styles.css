@@ -156,7 +156,7 @@ nav a:hover {
 
 .content-panel.hidden {
     opacity: 0;
-    transform: translateY(30%) !important;
+    transform: translateY(20%) !important;
 }
 
 .about-me {
