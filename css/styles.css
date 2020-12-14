@@ -188,11 +188,14 @@ nav a:hover {
 .card {
     box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.44);
     transition: transform 250ms;
-    cursor: pointer;
 }
 
 .card:hover {
     transform: scale(1.05);
+}
+
+.card-body {
+    cursor: pointer;
 }
 
 .skills p {
