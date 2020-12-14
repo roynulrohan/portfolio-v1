@@ -23,6 +23,26 @@ $(document).ready(function () {
     });
 });
 
+function isVisible(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height() - 350;
+
+    return elemBottom <= docViewBottom;
+}
+
+$(window).scroll(function () {
+    $('.content-panel').each(function () {
+        if (isVisible($(this))) {
+            $(this).removeClass('hidden');
+        } else {
+            $(this).addClass('hidden');
+        }
+    });
+});
+
 $(document).bind('scroll', function (e) {
     $('section').each(function () {
         if (
@@ -31,7 +51,6 @@ $(document).bind('scroll', function (e) {
             $(this).offset().top + $(this).height() > window.pageYOffset + 400
             //but ends in visible area
         ) {
-            console.log(currentSection);
             if ($(this).attr('id') != 'hero') {
                 currentSection = '#' + $(this).attr('id');
             } else {

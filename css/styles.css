@@ -92,7 +92,7 @@ nav a:hover {
     right: 0;
     transform: translateY(-90%);
     margin-right: 5vw;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .section-buttons a {
@@ -151,6 +151,12 @@ nav a:hover {
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
+    transition: 1s;
+}
+
+.content-panel.hidden {
+    opacity: 0;
+    transform: translateY(30%) !important;
 }
 
 .about-me {
