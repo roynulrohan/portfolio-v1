@@ -212,13 +212,43 @@ nav a:hover {
 }
 
 .card-cyan {
-    border: #ffde24 !important;
+    border: #2ab0ee !important;
     background-image: url('../images/overlay.png'), linear-gradient(45deg, #2ab0ee 90%, #202020 10%) !important;
 }
 
 .card-pink {
-    border: #ffde24 !important;
+    border: #df4887 !important;
     background-image: url('../images/overlay.png'), linear-gradient(45deg, #df4887 90%, #202020 10%) !important;
+}
+
+.btn-yellow {
+    background-color: #ffee00 !important;
+    border: 1px solid;
+    text-decoration: none;
+}
+
+.btn-yellow:hover {
+    border-color: #a78e00;
+}
+
+.btn-cyan {
+    background-color: #00ccff !important;
+    border: 1px solid;
+    text-decoration: none;
+}
+
+.btn-cyan:hover {
+    border-color: #176183;
+}
+
+.btn-pink {
+    background-color: #e9509c !important;
+    border: 1px solid;
+    text-decoration: none;
+}
+
+.btn-pink:hover {
+    border-color: #852b50;
 }
 
 .dot {
