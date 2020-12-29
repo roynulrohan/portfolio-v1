@@ -149,13 +149,16 @@ nav a:hover {
 }
 
 .content section {
-    height: 60vh;
+    display: flex;
+    min-height: 60vh;
+    height: 100%;
+    width: 100%;
 }
 
 .content-panel {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    height: 100%;
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
@@ -167,7 +170,7 @@ nav a:hover {
 }
 
 .about-me {
-    width: 65% !important;
+    width: 70% !important;
 }
 
 .skills svg {
@@ -178,6 +181,8 @@ nav a:hover {
 
 .projects-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .contact-form {
@@ -203,12 +208,17 @@ nav a:hover {
 
 .card-yellow {
     border: #ffde24 !important;
-    background-image: url('../images/overlay.png'), linear-gradient(45deg, #ffde24 90%, #202020 10%) !important;
+    background-image: url('../images/overlay.png'), linear-gradient(45deg, #ffda09 90%, #202020 10%) !important;
 }
 
 .card-cyan {
     border: #ffde24 !important;
     background-image: url('../images/overlay.png'), linear-gradient(45deg, #2ab0ee 90%, #202020 10%) !important;
+}
+
+.card-pink {
+    border: #ffde24 !important;
+    background-image: url('../images/overlay.png'), linear-gradient(45deg, #df4887 90%, #202020 10%) !important;
 }
 
 .dot {
