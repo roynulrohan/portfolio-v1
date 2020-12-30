@@ -236,17 +236,17 @@ nav a {
 
 .card-yellow {
     border: #ffde24 !important;
-    background-image: url('../images/overlay.png'), linear-gradient(45deg, #ffda09 90%, #202020 10%) !important;
+    background-image: url('../assets/images/overlay.png'), linear-gradient(45deg, #ffda09 90%, #202020 10%) !important;
 }
 
 .card-cyan {
     border: #2ab0ee !important;
-    background-image: url('../images/overlay.png'), linear-gradient(45deg, #2ab0ee 90%, #202020 10%) !important;
+    background-image: url('../assets/images/overlay.png'), linear-gradient(45deg, #2ab0ee 90%, #202020 10%) !important;
 }
 
 .card-pink {
     border: #df4887 !important;
-    background-image: url('../images/overlay.png'), linear-gradient(45deg, #df4887 90%, #202020 10%) !important;
+    background-image: url('../assets/images/overlay.png'), linear-gradient(45deg, #df4887 90%, #202020 10%) !important;
 }
 
 .btn-yellow {
