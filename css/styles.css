@@ -87,6 +87,7 @@ nav a {
 }
 
 .resume-button {
+    color: #01ffd5 !important;
     cursor: pointer;
     padding-left: 1em !important;
     padding-right: 1em !important;
