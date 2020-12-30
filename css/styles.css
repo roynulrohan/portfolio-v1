@@ -88,6 +88,10 @@ nav a:hover {
     margin-left: 0.5rem;
 }
 
+.navbar-nav {
+    width: fit-content !important;
+}
+
 .section-buttons-container {
     position: sticky;
     top: 90%;
