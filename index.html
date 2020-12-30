@@ -22,7 +22,7 @@
         <div class="wrapper hidden">
             <nav class="navbar p-3 navbar-expand-lg navbar-dark fixed-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"
+                    <a title="Home" class="navbar-brand" href="#"
                         ><svg
                             width="1.5em"
                             height="1.5em"
@@ -55,16 +55,18 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav nav-fill mb-2">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#about">About</a>
+                                <a title="Go to About section" class="nav-link underline active" href="/#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="#projects">Projects</a>
+                                <a title="Go to Projects section" class="nav-link underline active" href="/#projects">Projects</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="#contact">Contact</a>
+                                <a title="Go to Contact section" class="nav-link underline active" href="/#contact">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active resume-button" href="./assets/My Resume.pdf" target="_blank"><b>Resume</b></a>
+                                <a title="Open Resume File" class="nav-link active resume-button" href="./assets/My Resume.pdf" target="_blank"
+                                    >Get Resume</a
+                                >
                             </li>
                         </ul>
                     </div>
@@ -73,7 +75,7 @@
 
             <div class="section-buttons-container">
                 <div class="section-buttons">
-                    <a class="previous text-white hidden"
+                    <a title="Previous section" class="previous text-white hidden"
                         ><svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="3em"
@@ -89,7 +91,7 @@
                         </svg>
                     </a>
                     <div style="height: 1.5em"></div>
-                    <a class="next text-white">
+                    <a title="Next section" class="next text-white">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="3em"
@@ -174,7 +176,7 @@
                     <br />
                     <div class="profile-links container rounded bg-white d-flex justify-content-around">
                         <div>
-                            <a href="https://github.com/roynulrohan" target="_blank" class="text-dark"
+                            <a title="GitHub" href="https://github.com/roynulrohan" target="_blank" class="text-dark"
                                 ><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="currentColor">
                                     <path
                                         d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
@@ -183,7 +185,7 @@
                             </a>
                         </div>
                         <div class="text-primary">
-                            <a href="https://linkedin.com/in/roynul-rohan" target="_blank" class="text-primary">
+                            <a title="LinkedIn" href="https://linkedin.com/in/roynul-rohan" target="_blank" class="text-primary">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="currentColor">
                                     <path
                                         d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
@@ -192,7 +194,7 @@
                             </a>
                         </div>
                         <div class="text-success">
-                            <a href="#contact" class="text-success">
+                            <a title="Contact" href="#contact" class="text-success">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="currentColor">
                                     <path
                                         d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"
@@ -223,8 +225,8 @@
 
                         <h5>
                             <u>Recent Skills</u>
-                            <h5>React, Redux, Bootstrap</h5>
-                            <h5>Node.js, Express, RESTful APIs</h5>
+                            <h5><span style="color: #2779f5">React</span>, Redux, Bootstrap</h5>
+                            <h5><span style="color: #3bbb36">Node.js</span>, Express, RESTful APIs</h5>
                         </h5>
                     </div>
                 </section>
@@ -238,7 +240,7 @@
                             Note: If demos don't load instantly, please give it a minute as Heroku loads app after an idle state.
                         </small>
                         <div class="projects-container p-3">
-                            <div class="card card-yellow" style="width: 20rem; height: 15rem; margin: 1em">
+                            <div title="Not-IMDb Project" class="card card-yellow" style="width: 20rem; height: 15rem; margin: 1em">
                                 <div
                                     onclick="window.location = '/not-imdb.html';"
                                     class="card-body d-flex flex-column align-items-center justify-content-center"
@@ -250,6 +252,7 @@
                                 <div class="card-footer">
                                     <div class="p-2 d-flex justify-content-around align-items-center">
                                         <a
+                                            title="Not-IMDb Code"
                                             href="https://github.com/roynulrohan/not-IMDb"
                                             target="_blank"
                                             class="btn btn-yellow text-dark d-flex align-items-center"
@@ -269,6 +272,7 @@
                                             <span class="ml-2">Code</span>
                                         </a>
                                         <a
+                                            title="Not-IMDb Live"
                                             href="https://not-imdb.herokuapp.com"
                                             target="_blank"
                                             class="btn btn-yellow text-dark d-flex align-items-center"
@@ -291,7 +295,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card card-pink" style="width: 20rem; height: 15rem; margin: 1em">
+                            <div title="Amigo-Chat Project" class="card card-pink" style="width: 20rem; height: 15rem; margin: 1em">
                                 <div
                                     onclick="window.location = '/amigo-chat.html';"
                                     class="card-body d-flex flex-column align-items-center justify-content-center"
@@ -303,6 +307,7 @@
                                 <div class="card-footer">
                                     <div class="p-2 d-flex justify-content-around align-items-center">
                                         <a
+                                            title="Amigo-Chat Code"
                                             href="https://github.com/roynulrohan/amigo-chat"
                                             target="_blank"
                                             class="btn btn-pink text-dark d-flex align-items-center"
@@ -322,6 +327,7 @@
                                             <span class="ml-2">Code</span>
                                         </a>
                                         <a
+                                            title="Amigo-Chat Live"
                                             href="https://amigo-chat.herokuapp.com/"
                                             target="_blank"
                                             class="btn btn-pink text-dark d-flex align-items-center"
@@ -344,7 +350,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card card-cyan" style="width: 20rem; height: 15rem; margin: 1em">
+                            <div title="Simple-Habits Project" class="card card-cyan" style="width: 20rem; height: 15rem; margin: 1em">
                                 <div
                                     onclick="window.location = '/simple-habits.html';"
                                     class="card-body d-flex flex-column align-items-center justify-content-center"
@@ -356,6 +362,7 @@
                                 <div class="card-footer">
                                     <div class="p-2 d-flex justify-content-around align-items-center">
                                         <a
+                                            title="Simple-Habits Code"
                                             href="https://github.com/roynulrohan/simple-habits"
                                             target="_blank"
                                             class="btn btn-cyan text-dark d-flex align-items-center"
@@ -374,6 +381,7 @@
                                             </svg>
                                             <span class="ml-2">Code</span></a
                                         ><a
+                                            title="Simple-Habits Live"
                                             href="https://play.google.com/store/apps/details?id=com.roynulrohan.simple_habits"
                                             target="_blank"
                                             class="btn btn-cyan text-dark d-flex align-items-center"
@@ -423,7 +431,7 @@
                                 <textarea name="message" class="form-control" placeholder="Enter your message" required></textarea>
                             </div>
 
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button title="Submit Form" type="submit" class="btn btn-primary">Submit</button>
                         </form>
                     </div>
                 </section>

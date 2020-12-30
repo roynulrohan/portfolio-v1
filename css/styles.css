@@ -53,16 +53,18 @@ nav li {
 }
 
 nav a {
+    letter-spacing: 0.15em;
+    padding: 15px 20px;
+}
+
+.underline {
     color: #fff;
     text-decoration: none;
-    letter-spacing: 0.15em;
-
     display: inline-block;
-    padding: 15px 20px;
     position: relative;
 }
 
-.nav-item a:after {
+.underline:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: '';
@@ -75,13 +77,35 @@ nav a {
     width: 0;
 }
 
-.nav-item a:hover:after {
+.underline:hover:after {
     width: 100%;
     left: 0;
 }
 
-nav a:hover {
+.underline:hover {
     color: #01ffd5 !important;
+}
+
+.resume-button {
+    cursor: pointer;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+    border: 2px solid #01ffd5;
+    border-radius: 2.5rem;
+    transition: 0.5s;
+}
+
+.resume-button:hover {
+    font-weight: bold;
+    color: #000000 !important;
+    background-color: #01ffd5 !important;
+}
+
+.resume-button:active {
+    font-weight: bold;
+    color: #000000 !important;
+    background-color: #01ffd5 !important;
+    box-shadow: 1px solid #01ffd5;
 }
 
 .navbar-brand {
