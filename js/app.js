@@ -23,14 +23,6 @@ $(document).ready(function () {
         $('.previous').removeClass('hidden');
     }
 
-    $('.content-panel').each(function () {
-        if (isVisible($(this))) {
-            $(this).removeClass('hidden');
-        } else {
-            $(this).addClass('hidden');
-        }
-    });
-
     $('section').each(function () {
         if (
             $(this).offset().top < window.pageYOffset + 400 &&
@@ -71,15 +63,7 @@ function isVisible(elem) {
 }
 
 // content slide up animation
-$(window).scroll(function () {
-    $('.content-panel').each(function () {
-        if (isVisible($(this))) {
-            $(this).removeClass('hidden');
-        } else {
-            $(this).addClass('hidden');
-        }
-    });
-});
+
 
 // on scroll set currentSection hash to section in view
 $(document).bind('scroll', function (e) {
